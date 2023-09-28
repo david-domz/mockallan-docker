@@ -3,8 +3,8 @@ services:
   mockallan:
     build:
       context: .  # Use the current directory as the build context
-      dockerfile: Dockerfile  # Use the default Dockerfile name
-    image: mockallan-0.0.1  # Set the image name
+      dockerfile: Dockerfile
+    image: mockallan-latest
     tty: true
     stdin_open: true
     environment:
