@@ -49,7 +49,10 @@ docker run -v /local/path/stub_config.json:/app/stub_config.json mockallan
 
 ```
 
+## Documentation
+
+See [mockallan](https://github.com/david-domz/mockallan) - Lightweight HTTP server mock.
+
 ## Related Projects
 
-- [mockallan](https://github.com/david-domz/mockallan) - lightweight HTTP server mock.
 - [mockallan-python-client](https://github.com/david-domz/mockallan-python-client) - Mockallan python client class.
