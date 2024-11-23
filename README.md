@@ -6,18 +6,47 @@ Docker image to run `mockallan`.
 
 ## Getting Started
 
-1. Clone this repository.
+Clone this repository.
 
-2. Build `mockallan` docker image.
+### Using `docker-compose`
+
+Build `mockallan` docker image.
 
 ```bash
 docker-compose build
 ```
 
-3. Start `mockallan` docker container.
+Running `mockallan` docker container.
 
 ```bash
 docker-compose up
+```
+
+### Using `docker`
+
+Build `mockallan` docker image.
+
+```bash
+docker build -t mockallan:latest .
+```
+
+Running `mockallan` docker container using the default port.
+
+```bash
+docker run -p 8080:8080 mockallan
+```
+
+Running `mockallan` docker container using a custom port.
+
+```bash
+docker run -e MOCKALLAN_PORT=9090 -p 9090:9090 mockallan
+```
+
+Running `mockallan` docker container providing a configuration file.
+
+```bash
+docker run -v /local/path/stub_config.json:/app/stub_config.json mockallan
+
 ```
 
 ## Related Projects

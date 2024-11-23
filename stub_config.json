@@ -1,0 +1,45 @@
+{
+	"defaults": {
+		"response": {
+			"status_code": 200,
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"status": 200,
+				"message": "This is mockallan's configured default response"
+			}
+		}
+	},
+	"endpoints": [
+		{
+			"request": {
+				"method": "POST",
+				"path": "/orders/order_e2b9/products"
+			},
+			"response": {
+				"status_code": 200,
+				"headers": {
+					"Content-Type": "application/json"
+				},
+				"body": {
+					"status": 200,
+					"message": "This is mockallan's configured response for POST /orders/order_e2b9/products"
+				}
+			}
+		},
+		{
+			"request": {
+				"method": "POST",
+				"path": "/path/soap/1"
+			},
+			"response": {
+				"status_code": 200,
+				"headers": {
+					"Content-Type": "application/xml"
+				},
+				"body": "<SOAP:Envelope xmlns:SOAP=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><SOAP:Body><m:CreateUser><Integer xsi:type=\"xsd:integer\">0</Integer></m:CreateUser></SOAP:Body></SOAP:Envelope>"
+			}
+		}
+	]
+}
